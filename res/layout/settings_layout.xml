@@ -1,0 +1,187 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity" >
+
+    <TextView
+        android:id="@+id/intervalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:text="Interval (degrees)" />
+
+    <SeekBar
+        android:id="@+id/intervalSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/intervalText"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:max="10000"
+        android:progress="2572"/>
+    
+    <TextView
+        android:id="@+id/refineText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/intervalSlider"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:text="Refine" />
+
+    <SeekBar
+        android:id="@+id/refineSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/refineText"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp" 
+        android:max="10000"
+        android:progress="4147"/>
+    
+    <TextView
+        android:id="@+id/nText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/refineSlider"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:text="n" />
+
+    <SeekBar
+        android:id="@+id/nSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nText"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:max="10000"
+        android:progress="2237"/>
+    
+    <TextView
+        android:id="@+id/dText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nSlider"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:text="d" />
+    
+    <SeekBar
+        android:id="@+id/dSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dText"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:max="10000"
+        android:progress="5196"/>
+    
+    <TextView
+        android:id="@+id/delayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dSlider"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:text="Delay (ms)" />
+
+
+    <SeekBar
+        android:id="@+id/delaySlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/delayText"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp" 
+		android:max="10000"
+        android:progress="100"/>
+
+	<Button
+        android:id="@+id/randBtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/delaySlider"
+        android:layout_toRightOf="@+id/dText"
+        android:layout_marginTop="15dp"
+        android:text="   Random   " />
+    
+    <Button
+        android:id="@+id/drawBtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/delaySlider"
+        android:layout_toRightOf="@+id/randBtn"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="     Draw!     " />
+    
+    <CheckBox
+        android:id="@+id/intCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/drawBtn"
+        android:layout_alignBottom="@+id/drawBtn"
+        android:layout_alignRight="@+id/delaySlider"
+        android:layout_marginRight="15dp"
+        android:text="Integers" />
+
+    <TextView
+        android:id="@+id/intervalNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/intervalText"
+        android:layout_alignRight="@+id/intervalSlider"
+        android:layout_marginRight="25dp" 
+        android:text="0" />
+    
+    <TextView
+        android:id="@+id/refineNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/refineText"
+        android:layout_alignRight="@+id/refineSlider"
+        android:layout_marginRight="25dp" 
+        android:text="0" />
+    
+    <TextView
+        android:id="@+id/nNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/nText"
+        android:layout_alignRight="@+id/nSlider"
+        android:layout_marginRight="25dp" 
+        android:text="0" />
+    
+    <TextView
+        android:id="@+id/dNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dText"
+        android:layout_alignRight="@+id/dSlider"
+        android:layout_marginRight="25dp" 
+        android:text="0" />
+    
+    <TextView
+        android:id="@+id/delayNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/delayText"
+        android:layout_alignRight="@+id/delaySlider"
+        android:layout_marginRight="25dp" 
+        android:text="0" />
+
+
+
+</RelativeLayout>
