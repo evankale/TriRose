@@ -5,6 +5,12 @@ TriRose
 - Web: ISeeDeadPixel.com
 - Blog: evankale.blogspot.ca
 
+See a demo video here:
+https://youtu.be/ATshcIscVyU
+
+Google Play Link:
+https://play.google.com/store/apps/details?id=com.isdp.trirose
+
 Summary:
 The original Math Rose app!
 Mathematically generate unique and intricate rose graphs (rhodonea curves) and share them with your friends!
@@ -16,6 +22,3 @@ When d is a prime number then n/d is a least common form and the petals will str
 In the form k = 1/d when d is even then it will appear as a series of d/2 loops that meet at 2 small loops at the center touching (0, 0) from the vertical and is symmetrical about the x-axis. If d is odd then it will have d div 2 loops that meet at a small loop at the center from ether the left (when in the form d = 4n - 1) or the right (d = 4n + 1).
 If d is not prime and n is not 1, then it will appear as a series of interlocking loops.
 If k is an irrational number then the curve will have infinitely many petals, and it will be dense in the unit disc.
-  
-Google Play Link:
-https://play.google.com/store/apps/details?id=com.isdp.trirose
